@@ -1,4 +1,4 @@
-package com.mufeng.SteamAPI;
+package com.mufeng.StreamAPI;
 
 import java.util.*;
 import java.util.function.Predicate;

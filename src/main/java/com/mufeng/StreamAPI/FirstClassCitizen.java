@@ -1,4 +1,4 @@
-package com.mufeng.SteamAPI;
+package com.mufeng.StreamAPI;
 
 import java.io.File;
 import java.io.FileFilter;
