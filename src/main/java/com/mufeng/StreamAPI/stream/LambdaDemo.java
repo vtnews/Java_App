@@ -70,7 +70,10 @@ public class LambdaDemo {
         //不一样的是，这个是从左到右的优先级。是顺序执行过去的。a.or(b).and(c)可以看作(a || b) && c。
 
         //函数复合
-
+        Function<Integer, Integer> f = x -> x + 1;
+        Function<Integer, Integer> g = x -> x + 2;
+        Function<Integer, Integer> h = f.andThen(g);//如同数学上的g(f(x))，先算f
+        h = f.compose(g); //如同数学上的f(g(x))，先算g
     }
 
     public static <T> List<T> filter(List<T> list, Predicate<T> p) {
